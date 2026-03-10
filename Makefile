@@ -6,6 +6,9 @@ SRCS := $(wildcard *.c)
 # Generate object file names with .o extension from source files
 OBJS := $(SRCS:.c=.o)
 
+# Link against pthreads for hand-over-hand locking
+LIBS := -lpthread
+
 # The default target is 'all', which builds the program
 all: $(TARGET)
 

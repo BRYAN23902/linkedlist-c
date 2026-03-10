@@ -1,4 +1,8 @@
 
 void testAll();
+void testAllHOH();
 
-int main() { testAll(); }
+int main() {
+  testAll();
+  testAllHOH();
+}
